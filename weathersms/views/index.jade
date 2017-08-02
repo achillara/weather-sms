@@ -3,4 +3,22 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  form(name="Add Number", method="post")
+        div.input
+            span.label Add Name
+            input(type="text", name="name")
+        div.input
+            span.label Add Phone Number
+            input(type="text", name="number")
+        div.input
+            span.label Add Zipcode
+            input(type="text", name="zipcode")
+        div.input
+            span.label Add Time it will be sent to you daily
+            input(type="text", name="time")
+        div.actions
+            input(type="submit", value="add")
+
+
+
 
